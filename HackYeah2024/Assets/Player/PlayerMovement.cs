@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour {
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
+    [SerializeField] private Animator animator;
 
     [SerializeField] private bool canMove = true;
 
@@ -30,9 +31,12 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
+        float vertical = Input.GetAxis("Vertical");
+        float horizontal = Input.GetAxis("Horizontal");
+
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
-        float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
+        float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * vertical : 0;
+        float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * horizontal : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
@@ -58,7 +62,14 @@ public class PlayerMovement : MonoBehaviour {
             runSpeed = 12f;
         }
 
+        animator.SetBool("IsMoving",vertical != 0 || horizontal != 0);
+
         characterController.Move(moveDirection * Time.deltaTime);
+
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
+
+
 
         if (canMove) {
             rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;

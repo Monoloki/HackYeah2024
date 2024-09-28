@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class InteractionManager : Singleton<InteractionManager>
 {
+    public void StartInteraction() { 
     
+    }
 }
