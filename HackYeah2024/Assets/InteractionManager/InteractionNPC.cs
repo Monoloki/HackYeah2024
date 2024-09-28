@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class InteractionNPC : MonoBehaviour
 {
-    [SerializeField] private Dialogue dialogue;
+    [SerializeField] private Quest dialogue;
 
     public void StartInteraction() {
-        InteractionManager.instance.StartInteraction();
+        InteractionManager.instance.StartInteraction(dialogue);
     }
 }

@@ -19,15 +19,16 @@ public class PlayerMovement : MonoBehaviour {
     private CharacterController characterController;
     [SerializeField] private Animator animator;
 
-    [SerializeField] private bool canMove = true;
-
     void Start() {
         characterController = GetComponent<CharacterController>();
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     void Update() {
+
+        bool canMove = GameManager.instance.playerActive;
+
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 

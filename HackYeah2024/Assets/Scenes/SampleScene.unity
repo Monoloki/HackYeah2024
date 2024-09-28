@@ -541,8 +541,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0.003921569}
-    m_HighlightedColor: {r: 0.5892963, g: 0.69498897, b: 0.9811321, a: 0.39215687}
-    m_PressedColor: {r: 0.19496846, g: 0.29576668, b: 1, a: 0.54901963}
+    m_HighlightedColor: {r: 0.98039216, g: 0.95417416, b: 0.5882353, a: 0.39215687}
+    m_PressedColor: {r: 1, g: 0.60137534, b: 0, a: 0.54901963}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.003921569}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -823,8 +823,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278245375
-  m_fontColor: {r: 1, g: 0.84141093, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -891,52 +891,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732382879}
   m_CullTransparentMesh: 1
---- !u!1 &758743631
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 758743632}
-  - component: {fileID: 758743633}
-  m_Layer: 0
-  m_Name: DefaultInteraction
-  m_TagString: GameController
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &758743632
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758743631}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.118455, y: 5.797003, z: 1.9726564}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1830478014}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &758743633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758743631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0cc1fd6d5b91254a9b463b7e94a8dc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
 --- !u!1 &828831480
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,7 +939,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828831480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
@@ -1114,8 +1068,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0.003921569}
-    m_HighlightedColor: {r: 0.5892963, g: 0.69498897, b: 0.9811321, a: 0.39215687}
-    m_PressedColor: {r: 0.19496846, g: 0.29576668, b: 1, a: 0.54901963}
+    m_HighlightedColor: {r: 0.98039216, g: 0.9529412, b: 0.5882353, a: 0.39215687}
+    m_PressedColor: {r: 1, g: 0.6, b: 0, a: 0.54901963}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.003921569}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1253,8 +1207,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278245375
-  m_fontColor: {r: 1, g: 0.84141093, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1388,8 +1342,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278245375
-  m_fontColor: {r: 1, g: 0.84141093, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1523,8 +1477,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278245375
-  m_fontColor: {r: 1, g: 0.84141093, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1733,8 +1687,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278245375
-  m_fontColor: {r: 1, g: 0.84141093, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1862,8 +1816,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0.003921569}
-    m_HighlightedColor: {r: 0.5892963, g: 0.69498897, b: 0.9811321, a: 0.39215687}
-    m_PressedColor: {r: 0.19496846, g: 0.29576668, b: 1, a: 0.54901963}
+    m_HighlightedColor: {r: 0.98039216, g: 0.9529412, b: 0.5882353, a: 0.39215687}
+    m_PressedColor: {r: 1, g: 0.6, b: 0, a: 0.54901963}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.003921569}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2168,8 +2122,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0.003921569}
-    m_HighlightedColor: {r: 0.5892963, g: 0.69498897, b: 0.9811321, a: 0.39215687}
-    m_PressedColor: {r: 0.19496846, g: 0.29576668, b: 1, a: 0.54901963}
+    m_HighlightedColor: {r: 0.98039216, g: 0.9529412, b: 0.5882353, a: 0.39215687}
+    m_PressedColor: {r: 1, g: 0.6, b: 0, a: 0.54901963}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.003921569}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2404,8 +2358,9 @@ GameObject:
   - component: {fileID: 1830478017}
   - component: {fileID: 1830478016}
   - component: {fileID: 1830478015}
+  - component: {fileID: 1830478018}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: DefaultNPC
   m_TagString: Interaction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2419,12 +2374,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830478013}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.66, y: -5.29, z: 15.88}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4584551, y: 0.50700283, z: 17.852657}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 758743632}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1830478015
 BoxCollider:
@@ -2497,6 +2452,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830478013}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1830478018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830478013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cc1fd6d5b91254a9b463b7e94a8dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 5c72e7be622b8ef4a92372a86302171c, type: 2}
 --- !u!1 &1972303220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,8 +2526,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0.003921569}
-    m_HighlightedColor: {r: 0.5892963, g: 0.69498897, b: 0.9811321, a: 0.39215687}
-    m_PressedColor: {r: 0.19496846, g: 0.29576668, b: 1, a: 0.54901963}
+    m_HighlightedColor: {r: 0.98039216, g: 0.9529412, b: 0.5882353, a: 0.39215687}
+    m_PressedColor: {r: 1, g: 0.6, b: 0, a: 0.54901963}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.003921569}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2777,6 +2745,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317600445174636749, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
+        type: 3}
+      propertyPath: m_Name
+      value: lemur
+      objectReference: {fileID: 0}
     - target: {fileID: 3540741635196329340, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2845,7 +2818,7 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 7566154150467144578}
   - {fileID: 395670724}
-  - {fileID: 758743632}
+  - {fileID: 1830478014}
   - {fileID: 1693968117}
   - {fileID: 419201072}
   - {fileID: 673134496}
