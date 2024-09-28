@@ -27,38 +27,49 @@ public class InteractionManager : Singleton<InteractionManager>
 
         int activeStage = CheckActiveStage(currentQuest);
 
-        for (int i = 0; i < currentQuest.questStages[activeStage].dialogue.dialogues.Length; i++) {
+        int linesAmount = currentQuest.questStages[activeStage].dialogue.dialogues.Length;
 
-            CheckforActor(currentQuest.questStages[activeStage].dialogue, i);
+
+        for (int i = 0; i < linesAmount; i++) {
+
+            CheckforActor(currentQuest.questStages[activeStage], i, linesAmount);
 
             yield return new WaitUntil(() => responseTrigger);
             responseTrigger = false;
         }
 
+        
+
         TextPanelManager.instance.EndDialogue();
+
         GameManager.instance.playerActive = true;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    private void CheckforActor(Dialogue dialogue, int index) {
+    private void CheckforActor(QuestStage stage, int index, int maxIndex) {
 
-        if (dialogue.dialogues[index].actor == ACTORS.player) {
-            switch (dialogue.dialogues[index].line.Length) {
+        if (stage.dialogue.dialogues[index].actor == ACTORS.player) {
+            switch (stage.dialogue.dialogues[index].line.Length) {
                 case 1:
-                    TextPanelManager.instance.ShowTextPanel("Player: " + dialogue.dialogues[index].line[0]);
+                    TextPanelManager.instance.ShowTextPanel("Player: " + stage.dialogue.dialogues[index].line[0]);
                     break;
                 case 2:
-                    TextPanelManager.instance.ShowPanelOptionButtons(dialogue.dialogues[index].line);
+                    TextPanelManager.instance.ShowPanelOptionButtons(stage.dialogue.dialogues[index].line);
                     break;
             }
         }
         else {
-            if (dialogue.dialogues[index].line[anwserIndex] == "") {
-                TriggerAnswer(); //Maybe nie dziala
+            if (stage.dialogue.dialogues[index].line[anwserIndex] == "") {
+                TriggerAnswer();
                 return ;
             }
 
-            TextPanelManager.instance.ShowTextPanel($"{dialogue.dialogues[index].actor}: " + dialogue.dialogues[index].line[anwserIndex]);
+
+            if (index == maxIndex - 1) {
+                stage.done = true; //TODO: niebiezpieczne
+            }
+            
+            TextPanelManager.instance.ShowTextPanel($"{stage.dialogue.dialogues[index].actor}: " + stage.dialogue.dialogues[index].line[anwserIndex]);
         }
 
     }

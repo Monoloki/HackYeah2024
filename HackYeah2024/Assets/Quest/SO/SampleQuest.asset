@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   done: 0
   questStages:
-  - done: 0
+  - done: 1
     dialogue:
       dialogues:
       - line:
@@ -41,9 +41,6 @@ MonoBehaviour:
         actor: 0
       - line:
         - Thx!
-        actor: 1
-      - line:
-        - 
         actor: 1
     objective: 0
     objectiveTarget: 2
