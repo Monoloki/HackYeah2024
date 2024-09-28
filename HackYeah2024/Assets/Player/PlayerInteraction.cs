@@ -17,7 +17,6 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-
     private void OnDrawGizmos() {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, 4);
