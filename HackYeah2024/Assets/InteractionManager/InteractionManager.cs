@@ -75,7 +75,7 @@ public class InteractionManager : Singleton<InteractionManager>
         
 
         TextPanelManager.instance.EndDialogue();
-
+        CutSceneManager.instance.ResetCamera();
         GameManager.instance.playerActive = true;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -104,7 +104,7 @@ public class InteractionManager : Singleton<InteractionManager>
             }
             
             TextPanelManager.instance.ShowTextPanel($"{stage.dialogue.dialogues[index].actor}: " + stage.dialogue.dialogues[index].line[anwserIndex]);
-            CutSceneManager.instance.ResetCamera();
+            
         }
 
     }

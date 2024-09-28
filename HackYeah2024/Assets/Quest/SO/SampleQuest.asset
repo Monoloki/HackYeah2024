@@ -29,7 +29,7 @@ MonoBehaviour:
         - Meh i dont care
         actor: 0
       - line:
-        - '"i need something"'
+        - i need something
         - 
         actor: 1
     objective: 0

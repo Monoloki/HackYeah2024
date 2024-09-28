@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
     public float crouchHeight = 1f;
     public float crouchSpeed = 3f;
 
+    [SerializeField] private CinemachineVirtualCamera playerCamera;
     [SerializeField] private GameObject lookAt;
 
     private Vector3 moveDirection = Vector3.zero;
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour {
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        CutSceneManager.instance.playerCamera = playerCamera;
     }
 
     private void Awake() {

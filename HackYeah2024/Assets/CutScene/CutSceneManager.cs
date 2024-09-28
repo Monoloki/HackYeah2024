@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CutSceneManager : Singleton<CutSceneManager>
 {
-    [SerializeField] private CinemachineVirtualCamera playerCamera;
+    public CinemachineVirtualCamera playerCamera;
 
     private CinemachineVirtualCamera lastUsedCamera;
 
