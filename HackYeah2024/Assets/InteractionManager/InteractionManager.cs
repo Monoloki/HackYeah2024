@@ -20,6 +20,40 @@ public class InteractionManager : Singleton<InteractionManager>
         StartCoroutine(QuestCoroutine(currentQuest));
     }
 
+    public bool CanInteractNPC(Quest currentQuest) {
+        if (CheckActiveStage(currentQuest) != currentQuest.questProgress) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public bool CanInteractObject(Quest currentQuest, int objectIndex) {
+        if (CheckActiveStage(currentQuest) == objectIndex) {
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
+
+
+    public void SetProgress(Quest currentQuest, int objectIndex) {
+        int activeStage = CheckActiveStage(currentQuest);
+        currentQuest.questStages[activeStage - 1].objective += 1; //TODO: niebiezpieczne -1
+
+        int progress = currentQuest.questStages[activeStage - 1].objective;
+        int max = currentQuest.questStages[activeStage - 1].objectiveTarget;
+
+        PlayerUiManager.instance.ShowProgress(progress,max);
+
+        if (progress == max) {
+            currentQuest.questProgress += 1;
+        }
+    }
+
 
     private IEnumerator QuestCoroutine(Quest currentQuest) {
 
@@ -84,6 +118,10 @@ public class InteractionManager : Singleton<InteractionManager>
                 return index;
             }
         }
+        Debug.Log("ERROR ZLE ZROBIONY SO DLA QUESTA ALBO LINIE DIALOGOWE");
+        //musi byc tyle samo odpowiedzi co opcji dialogowcyh
+        // "" konczy rozmowe bez progressu
+
         return -1;
     }
 }

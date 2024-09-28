@@ -9,8 +9,15 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Interaction") {
+            
+            other.TryGetComponent(out lastActivatedNPC);
+
+            if (!lastActivatedNPC.CanInteract()) {
+                lastActivatedNPC = null;
+                return;
+            } 
+
             PlayerUiManager.instance.SetInteractionTextUi(true);
-            other.TryGetComponent<InteractionNPC>(out lastActivatedNPC);
         }
     }
 
@@ -23,11 +30,12 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update() {
 
-        if (!GameManager.instance.playerActive) return;
+        if (!GameManager.instance.playerActive || !lastActivatedNPC) return;
 
         if (Input.GetKeyDown("e")) {
             lastActivatedNPC.StartInteraction();
             PlayerUiManager.instance.SetInteractionTextUi(false);
+            lastActivatedNPC = null;
         }
     }
 

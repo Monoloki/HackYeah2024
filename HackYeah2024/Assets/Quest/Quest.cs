@@ -6,8 +6,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Quest", menuName = "ScriptableObjects/Quest", order = 0)]
 public class Quest : ScriptableObject
 {
-    public bool done; 
+    public bool done;
+    public int questProgress;
     public QuestStage[] questStages;
+    
 }
 
 [Serializable]

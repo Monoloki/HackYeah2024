@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class InteractionNPC : MonoBehaviour
 {
-    [SerializeField] private Quest dialogue;
+    [SerializeField] protected Quest dialogue;
+    
 
-    public void StartInteraction() {
+    public virtual void StartInteraction() {
         InteractionManager.instance.StartInteraction(dialogue);
+    }
+
+    public virtual bool CanInteract() {
+        return InteractionManager.instance.CanInteractNPC(dialogue);
     }
 }
