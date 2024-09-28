@@ -104,6 +104,7 @@ public class InteractionManager : Singleton<InteractionManager>
             }
             
             TextPanelManager.instance.ShowTextPanel($"{stage.dialogue.dialogues[index].actor}: " + stage.dialogue.dialogues[index].line[anwserIndex]);
+            CutSceneManager.instance.ResetCamera();
         }
 
     }
