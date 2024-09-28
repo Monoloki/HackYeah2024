@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 5381361500319626377}
   - component: {fileID: 7639927433698234960}
   m_Layer: 0
-  m_Name: AN_Fir_1
+  m_Name: AN_Fir_1NoLOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -337,4 +337,4 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4088922409290447811}
-  m_Enabled: 1
+  m_Enabled: 0
