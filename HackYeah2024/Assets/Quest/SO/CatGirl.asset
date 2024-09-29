@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: CatGirl
   m_EditorClassIdentifier: 
   done: 0
-  questProgress: 1
+  questProgress: 0
   questStages:
-  - done: 1
+  - done: 0
     dialogue:
       dialogues:
       - line:
@@ -42,9 +42,9 @@ MonoBehaviour:
       - line:
         - Ok! Be careful!
         actor: 2
-    objective: 1
+    objective: 0
     objectiveTarget: 1
-  - done: 1
+  - done: 0
     dialogue:
       dialogues:
       - line:

@@ -75,6 +75,12 @@ public class InteractionManager : Singleton<InteractionManager>
         
 
         TextPanelManager.instance.EndDialogue();
+
+        if (currentQuest.done) {
+            GameManager.instance.quests++;
+        }
+
+
         CutSceneManager.instance.ResetCamera();
         GameManager.instance.playerActive = true;
         Cursor.lockState = CursorLockMode.Locked;

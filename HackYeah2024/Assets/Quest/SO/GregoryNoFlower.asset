@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: GregoryNoFlower
   m_EditorClassIdentifier: 
   done: 0
-  questProgress: 1
+  questProgress: 0
   questStages:
-  - done: 1
+  - done: 0
     dialogue:
       dialogues:
       - line:
@@ -36,5 +36,5 @@ MonoBehaviour:
       - line:
         - Yeah, I'm ok, thank you
         actor: 3
-    objective: 1
+    objective: 0
     objectiveTarget: 1

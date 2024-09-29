@@ -39,5 +39,5 @@ MonoBehaviour:
       - line:
         - Okay good fellow, thank you
         actor: 4
-    objective: 0
+    objective: 1
     objectiveTarget: 1

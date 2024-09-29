@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GregoryWithFlower
   m_EditorClassIdentifier: 
   done: 0
-  questProgress: 1
+  questProgress: 0
   questStages:
   - done: 1
     dialogue:
