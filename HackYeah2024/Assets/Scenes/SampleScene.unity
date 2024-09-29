@@ -2123,7 +2123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74d9bfbf8934c843bcfe50677ae589c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 5c72e7be622b8ef4a92372a86302171c, type: 2}
+  dialogue: {fileID: 11400000, guid: 464f45c47ef72c047ad0b7ffcb4207f1, type: 2}
   cameraParent: {fileID: 0}
   objectIndex: 1
   used: 0

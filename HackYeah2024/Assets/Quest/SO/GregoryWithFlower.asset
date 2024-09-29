@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95868dac370a23d46b3872766bbbdb62, type: 3}
+  m_Name: GregoryWithFlower
+  m_EditorClassIdentifier: 
+  done: 0
+  questProgress: 1
+  questStages:
+  - done: 1
+    dialogue:
+      dialogues:
+      - line:
+        - Hmm... a very kind person gave me this flower today, I want you to have
+          it.
+        actor: 0
+      - line:
+        - Ohh, It's a dandelion, my granddaughter loves dandelions, how beautiful.
+        actor: 3
+      - line:
+        - A young girl gave it to me today as a "thank you" .
+        actor: 0
+      - line:
+        - Oh really, hmm. What was her name?
+        actor: 3
+      - line:
+        - I don't know.
+        actor: 0
+      - line:
+        - Hmm, where was she?
+        actor: 3
+      - line:
+        - Just outside the city, playing with her cat.
+        actor: 3
+      - line:
+        - Ohh, It must have been her, oh I need to see her, I love her so much.
+        actor: 3
+      - line:
+        - She should still be there.
+        actor: 0
+      - line:
+        - I need to see her, thank you kind stranger, I will visit her now, I want
+          to see her smile, It always makes me happy
+        actor: 3
+      - line:
+        - I'm glad i could help.
+        actor: 0
+      - line:
+        - And thank you for reminding me of my beloved little girl, I want her to
+          be happy, you said you helped her?
+        actor: 3
+      - line:
+        - Yes, her cat was stuck on a tree.
+        actor: 0
+      - line:
+        - Ah Haha, he always does that. You know, kindness is one of the most beautiful
+          things to witness. I sit here and think a lot usually, I like it, but sometimes
+          you just gotta DO and think a little less.
+        actor: 3
+      - line:
+        - 'Hmm... '
+        actor: 0
+      - line:
+        - Anyways, I'm off to see my granddaughter, take this key to this shed i
+          own just next to the park, you can take anything you need from there, I
+          don't really need it anymore
+        actor: 3
+      - line:
+        - Wow, thank you sir
+        actor: 0
+      - line:
+        - You're welcome haha (you finally see a wide smile on his face)
+        actor: 3
+    objective: 1
+    objectiveTarget: 1

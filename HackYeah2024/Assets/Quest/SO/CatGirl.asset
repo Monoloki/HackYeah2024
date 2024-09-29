@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: CatGirl
   m_EditorClassIdentifier: 
   done: 0
-  questProgress: 0
+  questProgress: 1
   questStages:
-  - done: 0
+  - done: 1
     dialogue:
       dialogues:
       - line:
@@ -23,25 +23,28 @@ MonoBehaviour:
         actor: 0
       - line:
         - My kitten, Womp, he climbed on a cliff, I am very worried about him
-        actor: 1
+        actor: 2
       - line:
         - How did he get in there?
         actor: 0
       - line:
         - I have no idea, please help him, please!!!
-        actor: 1
+        actor: 2
       - line:
         - Hey, it's okay, I'm here, I'll get him, wait here
         actor: 0
       - line:
         - Really? Just like that? How?
-        actor: 1
+        actor: 2
       - line:
         - Yes, just like that haha, wait here.
         actor: 0
-    objective: 0
+      - line:
+        - Ok! Be careful!
+        actor: 2
+    objective: 1
     objectiveTarget: 1
-  - done: 0
+  - done: 1
     dialogue:
       dialogues:
       - line:
@@ -53,15 +56,12 @@ MonoBehaviour:
       - line:
         - I found a flower, here have it, i'm sorry i dont have anything else for
           you
-        actor: 1
+        actor: 2
       - line:
         - Haha, it's okay, go play with your cat
         actor: 0
       - line:
         - I will! Thank you, bye!
-        actor: 1
-      - line:
-        - (thinking) Such a nice girl
-        actor: 0
+        actor: 2
     objective: -1
     objectiveTarget: -1

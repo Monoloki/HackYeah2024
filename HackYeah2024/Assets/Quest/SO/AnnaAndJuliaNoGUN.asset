@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95868dac370a23d46b3872766bbbdb62, type: 3}
+  m_Name: AnnaAndJuliaNoGUN
+  m_EditorClassIdentifier: 
+  done: 0
+  questProgress: 1
+  questStages:
+  - done: 1
+    dialogue:
+      dialogues:
+      - line:
+        - Eww, so much trash!
+        actor: 1
+      - line:
+        - Yeah, it's ugly, how could anyone do this to our beach
+        actor: 5
+      - line:
+        - '*thinking* ohh, a perfect occasion for my fusion reactor *thinking*'
+        actor: 0
+      - line:
+        - Fusion Blaster was lost during the emergency landing. I need to find it
+          first.
+        actor: 0
+      - line:
+        - I wish I could swim in the sea, just like always!
+        actor: 1
+    objective: 1
+    objectiveTarget: 1
