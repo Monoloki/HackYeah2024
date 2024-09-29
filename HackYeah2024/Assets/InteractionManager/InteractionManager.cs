@@ -82,10 +82,10 @@ public class InteractionManager : Singleton<InteractionManager>
 
     private void CheckforActor(QuestStage stage, int index, int maxIndex) {
 
-        if (stage.dialogue.dialogues[index].actor == ACTORS.player) {
+        if (stage.dialogue.dialogues[index].actor == ACTORS.Tink) {
             switch (stage.dialogue.dialogues[index].line.Length) {
                 case 1:
-                    TextPanelManager.instance.ShowTextPanel("Player: " + stage.dialogue.dialogues[index].line[0]);
+                    TextPanelManager.instance.ShowTextPanel("Tink: " + stage.dialogue.dialogues[index].line[0]);
                     break;
                 case 2:
                     TextPanelManager.instance.ShowPanelOptionButtons(stage.dialogue.dialogues[index].line);

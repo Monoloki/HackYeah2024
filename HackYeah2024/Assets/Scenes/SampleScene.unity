@@ -3147,18 +3147,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972303220}
   m_CullTransparentMesh: 1
---- !u!1 &2026121022 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3737320423219380269, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
-    type: 3}
-  m_PrefabInstance: {fileID: 7566154150467144578}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2026121023 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4227422177968209938, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
-    type: 3}
-  m_PrefabInstance: {fileID: 7566154150467144578}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2144668468
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,16 +3294,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3225946255782829075, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9797372
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225946255782829075, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.2002875
-      objectReference: {fileID: 0}
     - target: {fileID: 3540741635196329340, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3366,21 +3344,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3848780497151212434, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
-        type: 3}
-      propertyPath: lookAt
-      value: 
-      objectReference: {fileID: 2026121022}
-    - target: {fileID: 4227422177968209938, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849544936326330165, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
-        type: 3}
-      propertyPath: m_LookAt
-      value: 
-      objectReference: {fileID: 2026121023}
     - target: {fileID: 8198943697447010084, guid: 76dce76bc6f5ebb44bb8c655eda923e8,
         type: 3}
       propertyPath: m_Name

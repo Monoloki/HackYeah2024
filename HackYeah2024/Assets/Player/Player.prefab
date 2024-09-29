@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724067718154621401}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.162405, y: -0, z: -0, w: 0.9867242}
+  m_LocalRotation: {x: 0.2002875, y: -0, z: -0, w: 0.9797372}
   m_LocalPosition: {x: 0, y: 3.27, z: -5.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1802247112066841207}
+  m_LookAt: {fileID: 4227422177968209938}
   m_Follow: {fileID: 3540741635196329340}
   m_Lens:
     FieldOfView: 60.000004
@@ -97,7 +97,7 @@ Transform:
   m_GameObject: {fileID: 3737320423219380269}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -252,7 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f1eed8f9942a04284fb0831aabc9d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 6849544936326330165}
   walkSpeed: 6
   runSpeed: 12
   jumpPower: 7
@@ -261,8 +260,9 @@ MonoBehaviour:
   lookXLimit: 30
   crouchHeight: 1
   crouchSpeed: 3
+  playerCamera: {fileID: 6849544936326330165}
+  lookAt: {fileID: 3737320423219380269}
   animator: {fileID: 625063856691666212}
-  composer: {fileID: 0}
 --- !u!114 &7681225184775456975
 MonoBehaviour:
   m_ObjectHideFlags: 0

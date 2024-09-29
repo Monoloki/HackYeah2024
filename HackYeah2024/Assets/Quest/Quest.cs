@@ -34,7 +34,10 @@ public class DialogueLine {
 
 [Serializable]
 public enum ACTORS {
-    player = 0,
-    penguin = 1,
-
+    Tink = 0,
+    Julia = 1,
+    Agnes = 2,
+    Gregory = 3,
+    Leonard = 4,
+    Anne = 5,
 }
