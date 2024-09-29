@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95868dac370a23d46b3872766bbbdb62, type: 3}
+  m_Name: CatGirl
+  m_EditorClassIdentifier: 
+  done: 0
+  questProgress: 0
+  questStages:
+  - done: 0
+    dialogue:
+      dialogues:
+      - line:
+        - Hi, what's wrong?
+        actor: 0
+      - line:
+        - My kitten, Womp, he climbed on a cliff, I am very worried about him
+        actor: 1
+      - line:
+        - How did he get in there?
+        actor: 0
+      - line:
+        - I have no idea, please help him, please!!!
+        actor: 1
+      - line:
+        - Hey, it's okay, I'm here, I'll get him, wait here
+        actor: 0
+      - line:
+        - Really? Just like that? How?
+        actor: 1
+      - line:
+        - Yes, just like that haha, wait here.
+        actor: 0
+    objective: 0
+    objectiveTarget: 1
+  - done: 0
+    dialogue:
+      dialogues:
+      - line:
+        - Ohh my god thank you, thank you, thank you, how did you do that?
+        actor: 1
+      - line:
+        - Magic *wink*
+        actor: 0
+      - line:
+        - I found a flower, here have it, i'm sorry i dont have anything else for
+          you
+        actor: 1
+      - line:
+        - Haha, it's okay, go play with your cat
+        actor: 0
+      - line:
+        - I will! Thank you, bye!
+        actor: 1
+      - line:
+        - (thinking) Such a nice girl
+        actor: 0
+    objective: -1
+    objectiveTarget: -1
